@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+<class name="test.EmpClass" table="Employee">
+
+          <id name="rollnum" column="RollNo"></id>
+
+        <property name="Name" type="string">
+            <column name="Name" />
+         </property> 
+         
+         <property name="age" type="int">
+            <column name="age" />
+         </property>
+         
+         <property name="phnum" type="long">
+            <column name="phnum" />
+         </property>
+         
+         <property name="address" type="string">
+            <column name="address" />
+         </property>
+         
+         <property name="gender" type="string">
+            <column name="gender" />
+         </property>
+         
+         <property name="salary" type="int">
+            <column name="salary" />
+         </property>
+         
+         <property name="deptId" type="int">
+            <column name="deptId" />
+         </property>
+</class>
+</hibernate-mapping>
